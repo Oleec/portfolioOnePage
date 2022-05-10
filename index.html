@@ -11,10 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://app.99inbound.com/99inbound.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
+            $("a").on('click', function (event) {
 
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
@@ -28,7 +29,7 @@
                     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 800, function(){
+                    }, 800, function () {
 
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
@@ -146,9 +147,6 @@
             color: black;
         }
 
-        .form-control {
-            resize: none;
-        }
 
         .projectsPic {
             background: white;
@@ -169,6 +167,35 @@
             border: white;
             border-radius: 50%;
             padding: 15px;
+        }
+
+        .contactName {
+            margin: 20px;
+        }
+
+        .contactAddress {
+            margin: 20px;
+        }
+
+        .contactcity {
+            margin: 20px;
+        }
+
+        .contactEmail {
+            margin: 20px;
+        }
+
+        .contactMobile {
+            margin: 20px;
+        }
+
+        .img-responsive {
+            margin: 90px;
+        }
+
+        .branding pitch-text {
+            visibility: hidden !important;
+            resize: none;
         }
     </style>
 </head>
@@ -208,7 +235,7 @@
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center" id="whyIt">
     <h3 class="margin">Why Coding Development?</h3>
-    <p><strong> Is the Present and the Future and I Want to Be part of It .</strong> </p>
+    <p><strong> Is the Present and the Future and I Want to Be part of It .</strong></p>
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -253,7 +280,9 @@
                                 <h1>Let's Code Together! </h1>
                             </div>
                             <div class="modal-body">
-                                <p> I am always looking for solutions, to go beyond, for me coding is a world with no limits, the versatility of the programs to be developed is a challenge that excites me.</p>
+                                <p> I am always looking for solutions, to go beyond, for me coding is a world with no
+                                    limits, the versatility of the programs to be developed is a challenge that excites
+                                    me.</p>
                             </div>
                             <div class="modal-footer">
                                 <input class="btn btn-default" data-dismiss="modal" value="Sure!">
@@ -274,19 +303,22 @@
     <div class="row">
         <div class="col-sm-4">
             <h4>Match Point Business Group</h4>
-            <p>Business consulting in China -Coordination of business trips, visits to factories, support in export processes.</p>
+            <p>Business consulting in China -Coordination of business trips, visits to factories, support in export
+                processes.</p>
             <img src="Img/Mpbusiness trade.PNG" class="img-responsive sm" style="width:100%">
         </div>
         <div class="col-sm-4">
             <h4>Quick Zustellung e.U</h4>
-            <p>Creation and Implementation of a complete system for the reception and automatic assignment of drivers from
+            <p>Creation and Implementation of a complete system for the reception and automatic assignment of drivers
+                from
                 different industries in the sector delivery.</p><br><br>
             <br>
             <img src="Img/Quick Zustellung.PNG" class="img-responsive margin" style="width:100%" alt="Image">
         </div>
         <div class="col-sm-4">
             <h4>Ssogol Limited Company</h4>
-            <p>Supply of innovative products in China and factories specialized in Marketing Campaigns. Quality control.</p>
+            <p>Supply of innovative products in China and factories specialized in Marketing Campaigns. Quality
+                control.</p>
             <br>
             <br>
             <img src="Img/SSologo.PNG" class="img-responsive margin" style="width:100%" alt="Image">
@@ -302,7 +334,8 @@
             <h3 class="margin">Carrier</h3>
         </div>
         <div class="card-body">
-            <p class="card-text">After working with different fields related to physical products, I would conclude that there are many limitations.
+            <p class="card-text">After working with different fields related to physical products, I would conclude that
+                there are many limitations.
                 <br>With
                 <stron>coding</stron>
                 starts a great opportunity to exploit my full potential, believing that my experience, <br> skills
@@ -319,47 +352,21 @@
 
 <div class="containermt-5" id="contact">
     <div class="row">
-        <div class="col-sm-4"><br>
-            <img src="Img/contact.PNG" class="img-responsive margin" style="width:70%" alt="Image">
+        <div class="col-sm-2"><br>
         </div>
         <div class="col-sm-4">
             <h3 align="center" class="h3Contact">Contact</h3>
-            <br>
-            <p><strong>Oscar Lee Corradine</strong></p>
-            <p><strong>E-mail:</strong> oscarleecorradine@gmail.com</p>
-            <p><strong>Mobile:</strong> (+43) 676 5777 358</p>
-            <p><strong>Address: </strong> KokoschkaStraße 19, 4020</p>
-            <p><strong>Linz Austria </strong></p>
-
+            <img src="Img/contact.PNG" class="img-responsive" style="width:50%" alt="Image">
+            <p class="contactName"><strong>Oscar Lee Corradine</strong></p>
+            <p class="contactEmail"><strong>E-mail:</strong> oscarleecorradine@gmail.com</p>
+            <p class="contactMobile"><strong>Mobile:</strong> (+43) 676 5777 358</p>
+            <p class="contactAddress"><strong>Address: </strong> KokoschkaStraße 19, 4020</p>
+            <p class="contactcity"><strong>Linz Austria </strong></p>
         </div>
         <div class="col-sm-4">
-            <div>
-                <br><br>
-                <form class="row g-2">
-                    <div CLASS="col-md-5">
-                        <label for="firstName">Name:</label>
-                        <input type="text" class="form-control" id="firstName" required>
-                    </div>
-                    <div CLASS="col-md-5">
-                        <label for="phoneNumber">Phone Number</label>
-                        <input type="text" class="form-control" id="phoneNumber">
-                    </div>
-                    <div CLASS="col-md-10">
-                        <label for="emailInfo">E-mail:</label>
-                        <input type="email" class="form-control" id="emailInfo" required>
-                    </div>
-                    <br>
-                    <div class="col col-md-10">
-                        <label for="message" class="form-label">Message:</label>
-                        <textarea class="form-control" id="message" rows="3" required></textarea>
-                    </div>
-                    <br>
-                    <div class="col-md-10">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
-                <br>
-            </div>
+            <div class="inbound-form-wrapper" id="form_6859"
+                 data-path="https://app.99inbound.com/i/27c1bd3e-39c6-44a5-bf61-a1eb8b0f6002"
+                 data-token="rXUs4WH7WpxGDnyTovfZQQtt"></div>
         </div>
     </div>
 </div>
